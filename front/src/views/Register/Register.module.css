@@ -1,0 +1,87 @@
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background: linear-gradient(-135deg, #f5dac0, #d3a160);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.h1{
+    font-family:"Montserrat" , serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.label{
+    margin: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
+
+.input{
+    margin: 0 1rem;
+    font-family: "Prata", serif;
+    padding: 0.5rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #2D2D2D;; /* Cambia el color del borde cuando esté enfocado */
+    background-color: #f0e5d7e5; /* Cambia el color de fondo cuando esté enfocado */
+  }
+
+
+.button{
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 17px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    margin-top: 2rem;
+    color: #e7e7e7e0;
+    background-color: rgb(70, 33, 9);
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #bd7329;
+    transition: all .5s;
+    font-size: 15px;
+}
+
+
+.errorMsg{
+    color: rgb(139, 23, 23);
+    font-size: 14px;
+    margin: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
+
+.img{
+    width: 60%;
+    height: 75%;
+    margin:  auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+.cargando{ 
+    position: relative; 
+    color: #cfa555;
+    margin-top: 2em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    font-family:"Prata" , serif;
+}
+
+.contenedor{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.loader1{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorImg{
+    animation: salto 2s alternate
+    infinite;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+}
+
+
+@keyframes salto {
+    from {
+        opacity: 1;
+    }
+    to{
+         opacity: 0;
+    }
+}

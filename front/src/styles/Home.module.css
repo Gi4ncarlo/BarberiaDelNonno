@@ -1,0 +1,197 @@
+body{
+background-color: #F1E3CD;
+color: #2D2D2D;
+
+}
+
+.header{
+    background-color:  #D8B693;
+    padding: 2rem 0;
+}
+
+.title{
+    font-size: 60px;
+    text-align: center;
+    font-family:"Prata" , serif;
+}
+
+.subtitle{
+    font-size: 18px;
+    text-align: center;
+    margin: 6px;
+    font-family: "Crimson Text", serif;
+    
+}
+
+.h2{
+    font-size: 27px;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-family:"Prata" , serif;
+
+}
+
+.serviciosContainer{
+   display: flex;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+.servicio{
+    margin: 1rem;
+    border-radius: 0.6rem;
+    background-color: #ecd1a6c4;
+    padding: 2rem;
+    box-shadow: 1px 1px 3px rgba(78, 78, 78, 0.521);
+    max-width: 600px;
+ 
+}
+
+.servicio:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.7s;
+    margin: 0rem 2.8rem;
+}
+
+.h3{
+    font-size: 22px;
+    font-weight: 900;
+    padding: 0.5rem;
+    font-family: "Prata", serif;
+}
+
+.p{
+    padding: 0.5rem;
+    font-family:"Montserrat" , serif;
+    
+}
+
+.costo{
+    padding: 0.5rem;
+    font-family:"Montserrat" , serif;
+    text-align: end;
+    font-size: 17px;
+}
+
+.strong{
+    font-weight: bold;
+  
+}
+
+.contenedorHistoria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.h2Historia{
+    font-size: 27px;
+    text-align: center;
+    padding: 3rem 0;
+    font-weight: bold;
+    font-family:"Prata" , serif;
+    color: #ffffff;
+}
+
+.historia{
+    background-color: #D8B693;
+    max-width: 500px;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px 3px rgba(78, 78, 78, 0.521);
+
+}
+
+.textoHistoria{
+    text-align: justify;
+    font-family:"Montserrat" , serif;
+}
+
+.contenedorExteriorHistoria{
+    background-image: url("../assets/historia.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    background-color: #2D2D2D;
+    padding: 1rem;
+}
+
+.contenedorGaleria{
+    margin-top: 4rem;
+}
+
+.galeriaImg {
+    width: 100%; 
+    height: auto; 
+    max-height: 600px;
+    object-fit: cover; 
+    border-radius: 0.5rem; 
+}
+
+.horariosContainer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #D8B693;
+    padding: 1rem;
+}
+
+
+.horarios{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.h3Horarios{
+    font-size: 25px;
+    font-weight: 900;
+    padding: 0.5rem;
+    font-family:"Prata" , serif;
+}
+
+.parrafoHorarios{
+    margin: 0.2rem;
+    font-family:"Montserrat" , serif;
+}
+
+.pediTurnoBtn{
+    padding: 0.7rem;
+    font-family:"Montserrat" , serif;
+    background-color: #2D2D2D;
+    font-size: 16px;
+    color: #D8B693;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.pediTurnoBtn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all .5s;
+}

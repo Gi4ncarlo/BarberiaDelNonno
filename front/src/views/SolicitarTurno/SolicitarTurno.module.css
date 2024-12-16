@@ -1,0 +1,76 @@
+.mainContainer{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-image: url("../../assets/FondoSolicitarTurno.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 2rem;
+    background:  linear-gradient(-135deg, #d6a446, #f3e7c5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    margin-top: 14%;
+    width: 700px;
+}
+
+.h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 29px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: rgb(133, 63, 16);
+    text-align: center;
+}
+
+.label{
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    padding: 0.7rem 0;
+    font-weight: 500;
+}
+
+.input{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+
+.button{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 17px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: #e7e7e7e0;
+    background-color: rgb(70, 33, 9);
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #bd7329;
+    transition: all .5s;
+    font-size: 15px;
+}
+
+.errorMsg{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(104, 2, 2);
+    padding: 0.5rem;
+}

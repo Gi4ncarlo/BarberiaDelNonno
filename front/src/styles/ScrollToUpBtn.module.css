@@ -1,0 +1,28 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .button {
+    background-color:#ccab75; /* Color similar al de la imagen */
+    border: none;
+    border-radius: 5%;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .button:active {
+    transform: scale(1);
+  }
+  
+  
