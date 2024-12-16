@@ -7,11 +7,11 @@ const Credentials_1 = require("../entities/Credentials");
 const Appointment_1 = require("../entities/Appointment");
 exports.AppDataSource = new typeorm_1.DataSource({
     type: "postgres",
-    host: "localhost",
+    host: "dpg-ctg61kl6l47c73d898a0-a",
     port: 5432,
-    username: "postgres",
-    password: "Host8080",
-    database: "barberdatabase",
+    username: "barberia_4n2h_user",
+    password: "5Vu8XYflNiihPCfqnBfHfvC68YqUhorF",
+    database: "barberia_4n2h",
     // dropSchema: true,
     synchronize: true,
     logging: false,
