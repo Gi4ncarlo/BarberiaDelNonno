@@ -17,7 +17,7 @@ const Register = () => {
 
   const registrar = (values) => {
 
-    axios.post("http://localhost:3000/users/register", values )
+    axios.post(`${import.meta.env.VITE_PORT}/users/register`, values )
     .then(() => {
        setMessage("Registro Exitoso!");
        setShowModal(true);

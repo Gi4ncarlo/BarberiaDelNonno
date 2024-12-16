@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import styles from "../styles/Turno.module.css";
 import { cancelAppointment } from "../redux/reducer";
@@ -41,7 +42,7 @@ const Turno = ({ date, time, status, id }) => {
     }else{
 
       try {
-        await axios.put(`http://localhost:3000/appointments/cancel/${id}`);
+        await axios.put(`${import.meta.env.VITE_PORT}/appointments/cancel/${id}`);
         dispatch(cancelAppointment(id)); 
       } catch (error) {
         console.error("Error cancelling appointment:", error);
@@ -88,6 +89,13 @@ const Turno = ({ date, time, status, id }) => {
       <Modal message={message} showModal={showModal} />
     </div>
   );
+};
+
+Turno.propTypes = {
+  date: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Turno;

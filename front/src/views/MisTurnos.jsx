@@ -19,7 +19,7 @@ export const MisTurnos = () => {
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/appointments`);
+        const response = await axios.get(`${import.meta.env.VITE_PORT}/appointments`);
         const userAppointments = response.data.filter(
           (appointment) => appointment.userId.id === user.id
         );

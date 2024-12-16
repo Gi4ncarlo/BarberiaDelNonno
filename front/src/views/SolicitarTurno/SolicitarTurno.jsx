@@ -28,7 +28,7 @@ const SolicitarTurno = () => {
     try {
 
       const response = await axios.post(
-        "http://localhost:3000/appointments/schedule",
+        `${import.meta.env.VITE_PORT}/appointments/schedule`,
         {
           ...values,
           userId: user.id,
