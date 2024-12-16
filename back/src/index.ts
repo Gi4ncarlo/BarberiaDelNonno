@@ -39,9 +39,11 @@ import { AppDataSource } from './config/data-source';
 
 import {PORT} from './config/envs';
 
+const port = process.env.PORT || PORT || 3000;
+
 AppDataSource.initialize().then(() => {
-    server.listen(PORT, () => {
-        console.log(`server on port ${PORT}`)
+    server.listen(port, () => {
+        console.log(`server on port ${port}`)
     })
 }).catch((err) => {
     console.error("Error during Data Source initialization:", err)

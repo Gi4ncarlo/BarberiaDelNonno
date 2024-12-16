@@ -9,7 +9,13 @@ server.use(morgan("dev"));
 
 server.use(express.json());
 
-server.use(cors())
+const allowedOrigins = ['https://barberia-del-nonno-dyis.vercel.app'];
+
+server.use(cors({
+    origin: allowedOrigins,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true // Si usas cookies o headers personalizados
+}));
 
 server.use(router);
 
